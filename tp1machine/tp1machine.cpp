@@ -8,6 +8,8 @@
 
 int main()
 {
+	t_machine M;
+
     t_piece P;
     P.identifient = 123;
 
@@ -15,25 +17,57 @@ int main()
     Q.identifient = 900;
 
     t_piece R;
-    R.identifient = -134;
+    R.identifient = 321;
 
 
     t_file ma_file;
     ma_file.debut = 2;
     ma_file.fin = 2;
-    
-    // plus add smt pour intialiser lafile de manière plus belle
+    tester_file_vide(ma_file);
 
     ajouter_element(ma_file, P);
-    
-    for (int i = 1;i <= 5;i++)
-    {
-        t_piece P;
-        P.identifient = i * 10 + 1000;
-        ajouter_element(ma_file, P);
-    }
+    tester_file_vide(ma_file);
+
+    ajouter_element(ma_file, R);
+    ajouter_element(ma_file, Q);
+    retirer_element(ma_file, P);
+    tester_file_pleine(ma_file);
+
+    t_piece Z;
+    Z.identifient = 777;
+    ajouter_element(ma_file, Z);
+
+    t_piece C;
+    C.identifient = 777;
+    ajouter_element(ma_file, C);
+
+    t_piece A;
+    A.identifient = 771;
+    ajouter_element(ma_file, A);
+
+    t_piece B;
+    B.identifient = 727;
+    ajouter_element(ma_file, B);
+
+    t_piece D;
+    D.identifient = 727;
+    ajouter_element(ma_file, D);
+
+    t_piece E;
+    E.identifient = 727;
+    ajouter_element(ma_file, E);
+
+    t_piece F;
+    F.identifient = 727;
+    ajouter_element(ma_file, F);
+
+
+
+    tester_file_pleine(ma_file);
+
 
     std::cout << "fin ";
+
 
 
 }
