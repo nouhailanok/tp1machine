@@ -30,7 +30,7 @@ int main()
 
     ajouter_element(ma_file, R);
     ajouter_element(ma_file, Q);
-    retirer_element(ma_file, P);
+    retirer_element(ma_file, Q);
     tester_file_pleine(ma_file);
 
     t_piece Z;

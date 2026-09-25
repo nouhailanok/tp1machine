@@ -4,8 +4,8 @@ const int nb_max_piece_en_sortie = 99999;
 const int taille_tableau = 10;
 const int taille_file = taille_tableau -1;
 
-const int LIBRE = 0;
-const int OCCUPEE = 1;
+//const int LIBRE = 0;
+//const int OCCUPEE = 1;
 
 const int INFINI = 2000000000;
 
