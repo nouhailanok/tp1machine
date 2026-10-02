@@ -2,10 +2,10 @@
 #include <cstdio>
 #include <cstdlib>
 
- 
+
 void ajouter_element(t_file& une_file, t_piece une_piece)
 {
-	if ((une_file.fin + 1) % taille_tableau == une_file.debut){
+	if ((une_file.fin + 1) % taille_tableau == une_file.debut) {
 		printf("Erreur : ajout dans une file pleine\n");
 		exit(-1);
 	}
@@ -72,13 +72,11 @@ void initialiser_file(t_file& une_file)
 }
 
 
-void deposer_sur_sortie(t_sortie &S, t_piece P) {
-	S.nb_piece = S.nb_piece + 1;
+void deposer_sur_sortie(t_sortie& S, t_piece P) {
 	S.liste[S.nb_piece] = P;
+	S.nb_piece = S.nb_piece + 1;
 }
 
 void faire_statistique(t_sortie une_sortie, float duree_moyenne_dans_le_systeme) {
 
 }
-
-t_resultats simulation(int duree_simulation, int Lam, int Sa, int trace);

@@ -1,6 +1,6 @@
 #pragma once
 
-const int nb_max_piece_en_sortie = 99999;
+const int nb_max_piece_en_sortie = 999999;
 const int taille_tableau = 10;
 const int taille_file = taille_tableau -1;
 
@@ -68,4 +68,3 @@ int tester_file_vide(t_file une_file);
 int tester_file_pleine(t_file une_file);
 void retirer_element(t_file& une_file, t_piece& une_piece);
 void faire_statistique(t_sortie une_sortie, float duree_moyenne_dans_le_systeme);
-t_resultats simulation(int duree_simulation, int Lam, int Sa, int trace);
